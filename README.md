@@ -1,8 +1,10 @@
 # Mattermost RTL
 
-This plugin adds RTL support to Mattermost and applies some UI customizations:
+This plugin adds RTL support to Mattermost and applies some UI customizations.
 
-- Changes font to `Vazir`
+- Automatic direction for messages
+  - Correct direction for `inline codes`
+- Changes font to [Vazir](https://github.com/rastikerdar/vazir-font)
 - Reduces width of message boxes
 - Other minor UI changes
 
