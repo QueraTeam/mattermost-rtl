@@ -1,0 +1,10 @@
+dist
+
+# Mac
+.DS_Store
+
+# VSCode
+.vscode
+
+# JetBrains
+.idea

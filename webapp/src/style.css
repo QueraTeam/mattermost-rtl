@@ -1,0 +1,80 @@
+@font-face {
+    font-family: VazirWOL;
+    font-style: normal;
+    font-weight: bold;
+    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Bold-WOL.eot");
+    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Bold-WOL.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Bold-WOL.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Bold-WOL.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: VazirWOL;
+    font-style: normal;
+    font-weight: 500;
+    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Medium-WOL.eot");
+    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Medium-WOL.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Medium-WOL.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Medium-WOL.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: VazirWOL;
+    font-style: normal;
+    font-weight: 300;
+    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Light-WOL.eot");
+    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Light-WOL.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Light-WOL.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Light-WOL.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: VazirWOL;
+    font-style: normal;
+    font-weight: 200;
+    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Thin-WOL.eot");
+    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Thin-WOL.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Thin-WOL.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Thin-WOL.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: VazirWOL;
+    font-style: normal;
+    font-weight: normal;
+    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-WOL.eot");
+    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-WOL.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-WOL.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-WOL.ttf") format('truetype');
+}
+
+.post p, .post-message__text,
+.channel-header__info .channel-header__description,
+.channel-header .heading,
+.post .post__header .col__name .user-popover,
+#post_textbox, #edit_textbox, #searchBox
+{
+    font-family: VazirWOL, 'Open Sans', sans-serif !important;
+    unicode-bidi: plaintext;
+}
+
+code {
+    unicode-bidi: plaintext;
+}
+
+.post {
+    padding-top: 25px;
+}
+
+.post .post__body {
+    max-width: 500px;
+}
+
+.post:not(.post--system) .post__body {
+    background: rgba(61, 60, 64, 0.06);
+    color: #111;
+}
+
+.app__body .post:hover, .app__body .post.a11y--active, .app__body .modal .settings-modal .settings-table .settings-content .section-min:hover {
+    background: rgba(61, 60, 64, 0.03) !important;
+}
+
+.post.current--user .post__body {
+    background-color: #effdde !important;
+}
+
+@media screen and (min-width: 769px) {
+    .post.same--root.same--user .post__header .col__reply {
+        top: -4px;
+    }
+}
