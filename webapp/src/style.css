@@ -56,11 +56,8 @@ code {
     padding-top: 25px;
 }
 
-.post .post__body {
-    max-width: 500px;
-}
-
 .post:not(.post--system) .post__body {
+    max-width: 500px;
     background: rgba(61, 60, 64, 0.06);
     color: #111;
 }
