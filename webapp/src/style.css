@@ -38,40 +38,19 @@
     src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-WOL.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-WOL.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-WOL.ttf") format('truetype');
 }
 
+/* Change font and fix text direction for messages and text inputs */
 .post p, .post-message__text,
 .channel-header__info .channel-header__description,
 .channel-header .heading,
 .post .post__header .col__name .user-popover,
-#post_textbox, #edit_textbox, #searchBox
+.post .post__link .theme,
+#post_textbox, #edit_textbox, #reply_textbox, #searchBox
 {
     font-family: VazirWOL, 'Open Sans', sans-serif !important;
     unicode-bidi: plaintext;
 }
 
+/* Fix text direction for inline codes */
 code {
     unicode-bidi: plaintext;
-}
-
-.post {
-    padding-top: 25px;
-}
-
-.post:not(.post--system) .post__body {
-    max-width: 500px;
-    background: rgba(61, 60, 64, 0.06);
-    color: #111;
-}
-
-.app__body .post:hover, .app__body .post.a11y--active, .app__body .modal .settings-modal .settings-table .settings-content .section-min:hover {
-    background: rgba(61, 60, 64, 0.03) !important;
-}
-
-.post.current--user .post__body {
-    background-color: #effdde !important;
-}
-
-@media screen and (min-width: 769px) {
-    .post.same--root.same--user .post__header .col__reply {
-        top: -4px;
-    }
 }

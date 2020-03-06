@@ -1,23 +1,24 @@
 # Mattermost RTL
 
-This plugin adds RTL support to Mattermost and applies some UI customizations.
+This plugin adds RTL support to Mattermost.
 
-- Automatic direction for messages
-  - Correct direction for `inline codes`
+- Automatic direction for messages and text inputs.
 - Changes font to [Vazir](https://github.com/rastikerdar/vazir-font)
-- Reduces width of message boxes
-- Other minor UI changes
 
 **Before** enabling plugin:
 
-![before](screenshots/before.png)
+![before](screenshots/screenshot1.png)
 
 **After** enabling plugin:
 
-![after](screenshots/after.png)
+![after](screenshots/screenshot2.png)
+
+And if you enable [mattermost-chat-ui](https://github.com/QueraTeam/mattermost-chat-ui):
+
+![after](screenshots/screenshot3.png)
 
 This repository is based on
-[mattermost/mattermost-plugin-starter-template](https://github.com/mattermost/mattermost-plugin-starter-template).
+[mattermost-plugin-starter-template](https://github.com/mattermost/mattermost-plugin-starter-template).
 
 ## Installation
 
