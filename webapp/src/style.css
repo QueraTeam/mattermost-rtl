@@ -44,10 +44,19 @@
 .channel-header .heading,
 .post .post__header .col__name .user-popover,
 .post .post__link .theme,
-#post_textbox, #edit_textbox, #reply_textbox, #searchBox
-{
+#post_textbox, #edit_textbox, #reply_textbox, #searchBox {
     font-family: VazirWOL, 'Open Sans', sans-serif !important;
     unicode-bidi: plaintext;
+}
+
+ul.markdown__list > li, ol.markdown__list > li {
+    unicode-bidi: plaintext;
+}
+ul.markdown__list {
+    padding-inline-start: 22px;
+}
+ol.markdown__list > li::before {
+    padding: 0 5px !important;
 }
 
 /* Fix text direction for inline codes */
