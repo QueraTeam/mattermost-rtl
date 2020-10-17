@@ -13,7 +13,7 @@ This plugin adds RTL support to Mattermost.
 
 ![after](screenshots/screenshot2.png)
 
-And if you enable [mattermost-chat-ui](https://github.com/QueraTeam/mattermost-chat-ui):
+This plugin is also compatible with [mattermost-chat-ui](https://github.com/QueraTeam/mattermost-chat-ui), enabling both will result in:
 
 ![after](screenshots/screenshot3.png)
 
