@@ -55,7 +55,14 @@ ul.markdown__list > li, ol.markdown__list > li {
 ul.markdown__list {
     padding-inline-start: 22px;
 }
+ol.markdown__list {
+    display: block !important;
+}
+ol.markdown__list > li {
+    display: block !important;
+}
 ol.markdown__list > li::before {
+    display: inline !important;
     padding: 0 5px !important;
 }
 

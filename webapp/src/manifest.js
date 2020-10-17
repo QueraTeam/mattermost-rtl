@@ -5,7 +5,7 @@ const manifest = JSON.parse(`
     "id": "ir.quera.mattermost-rtl",
     "name": "Mattermost RTL",
     "description": "This plugin adds RTL support to Mattermost.",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "min_server_version": "5.12.0",
     "webapp": {
         "bundle_path": "webapp/dist/main.js"
