@@ -1,6 +1,6 @@
 # Mattermost RTL
 
-This plugin adds RTL support to Mattermost.
+This plugin [adds RTL (right-to-left) support to Mattermost](https://mattermost.com/blog/adding-rtl-support-to-mattermost/).
 
 - Automatic direction for messages and text inputs.
 - Changes font to [Vazir](https://github.com/rastikerdar/vazir-font)
