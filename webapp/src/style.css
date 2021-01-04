@@ -34,8 +34,8 @@
     font-family: VazirWOL;
     font-style: normal;
     font-weight: normal;
-    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-WOL.eot");
-    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-WOL.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-WOL.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-WOL.ttf") format('truetype');
+    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Regular-WOL.eot");
+    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Regular-WOL.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Regular-WOL.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/Vazir-Regular-WOL.ttf") format('truetype');
 }
 
 /* Change font and fix text direction for messages and text inputs */
