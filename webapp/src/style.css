@@ -40,6 +40,12 @@
 
 /* Change font and fix text direction for messages and text inputs */
 .post p, .post-message__text,
+.post-message__text h1,
+.post-message__text h2,
+.post-message__text h3,
+.post-message__text h4,
+.post-message__text h5,
+.post-message__text h6,
 .channel-header__info .channel-header__description,
 .channel-header .heading,
 .post .post__header .col__name .user-popover,
