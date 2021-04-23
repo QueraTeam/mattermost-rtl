@@ -2,7 +2,7 @@
     "id": "ir.quera.mattermost-rtl",
     "name": "Mattermost RTL",
     "description": "This plugin adds RTL support to Mattermost.",
-    "version": "0.1.6",
+    "version": "0.2.0",
     "min_server_version": "5.12.0",
     "webapp": {
         "bundle_path": "webapp/dist/main.js"
