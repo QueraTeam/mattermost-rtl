@@ -56,7 +56,8 @@
 }
 
 ul.markdown__list {
-    padding-inline-start: 22px;
+    padding-inline-start: 22px !important;
+    padding-inline-end: 0 !important;
 }
 ol.markdown__list {
     display: block !important;
