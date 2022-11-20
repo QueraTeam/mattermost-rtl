@@ -1,20 +1,20 @@
 {
-  "name": "mattermost-rtl",
-  "version": "0.2.1",
-  "description": "This plugin adds RTL support to Mattermost.",
-  "main": "src/index.js",
-  "scripts": {
-    "build": "webpack --mode=production",
-    "debug": "webpack --mode=none"
-  },
-  "author": "Mohammad Javad Naderi",
-  "license": "",
-  "devDependencies": {
-    "@babel/core": "^7.15.5",
-    "babel-loader": "^8.2.2",
-    "css-loader": "^6.3.0",
-    "style-loader": "^3.3.0",
-    "webpack": "^5.54.0",
-    "webpack-cli": "^4.8.0"
-  }
+    "name": "mattermost-rtl",
+    "version": "0.3.0",
+    "description": "Adds RTL support to Mattermost.",
+    "main": "src/index.js",
+    "scripts": {
+        "build": "webpack --mode=production",
+        "debug": "webpack --mode=none"
+    },
+    "author": "Mohammad Javad Naderi",
+    "license": "",
+    "devDependencies": {
+        "@babel/core": "^7.15.5",
+        "babel-loader": "^8.2.2",
+        "css-loader": "^6.3.0",
+        "style-loader": "^3.3.0",
+        "webpack": "^5.54.0",
+        "webpack-cli": "^4.8.0"
+    }
 }

@@ -3,13 +3,13 @@
 This plugin [adds RTL (right-to-left) support to Mattermost](https://mattermost.com/blog/adding-rtl-support-to-mattermost/).
 
 - Automatic direction for messages and text inputs.
-- Changes font to [Vazir](https://github.com/rastikerdar/vazir-font)
+- Changes font to [Vazirmatn](https://github.com/rastikerdar/vazirmatn)
 
-**Before** enabling plugin:
+**Before** enabling the plugin:
 
 ![before](screenshots/screenshot1.png)
 
-**After** enabling plugin:
+**After** enabling the plugin:
 
 ![after](screenshots/screenshot2.png)
 
@@ -22,11 +22,11 @@ This repository is based on
 
 ## Installation
 
-Download the plugin file (`ir.quera.mattermost-rtl-*.tar.gz`) from
+Download the plugin file (`ir.quera.mattermost-rtl-*.tar.gz`) from the
 [Releases](https://github.com/QueraTeam/mattermost-rtl/releases)
-page and upload to your Mattermost
-server via **System Console**.
+page and upload it to your Mattermost server via **System Console**.
 
 ## Development, Build
-
-    make
+```
+make
+```
