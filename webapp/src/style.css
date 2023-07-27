@@ -1,41 +1,10 @@
 @font-face {
-    font-family: VazirWOL;
-    font-style: normal;
-    font-weight: bold;
-    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Bold-WOL.eot");
-    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Bold-WOL.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Bold-WOL.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Bold-WOL.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: VazirWOL;
-    font-style: normal;
-    font-weight: 500;
-    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Medium-WOL.eot");
-    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Medium-WOL.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Medium-WOL.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Medium-WOL.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: VazirWOL;
-    font-style: normal;
-    font-weight: 300;
-    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Light-WOL.eot");
-    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Light-WOL.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Light-WOL.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Light-WOL.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: VazirWOL;
-    font-style: normal;
-    font-weight: 200;
-    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Thin-WOL.eot");
-    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Thin-WOL.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Thin-WOL.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Thin-WOL.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: VazirWOL;
-    font-style: normal;
-    font-weight: normal;
-    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Regular-WOL.eot");
-    src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Regular-WOL.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Regular-WOL.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazir-28.0.0/Vazir-Regular-WOL.ttf") format('truetype');
+  font-family: VazirmatnNL;
+  src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazirmatn-v33.003/Vazirmatn-NL[wght].woff2") format('woff2 supports variations'),
+       url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazirmatn-v33.003/Vazirmatn-NL[wght].woff2") format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* Change font and fix text direction for messages and text inputs */
@@ -51,7 +20,7 @@
 .post .post__header .col__name .user-popover,
 .post .post__link .theme,
 #post_textbox, #edit_textbox, #reply_textbox, #searchBox {
-    font-family: VazirWOL, 'Open Sans', sans-serif !important;
+    font-family: VazirmatnNL, 'Open Sans', sans-serif !important;
     unicode-bidi: plaintext;
 }
 
