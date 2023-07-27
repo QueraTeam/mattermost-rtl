@@ -11,10 +11,6 @@ It applies automatic direction for messages and text inputs.
 
 ![after](screenshots/screenshot2.png)
 
-This plugin is also compatible with [mattermost-chat-ui](https://github.com/QueraTeam/mattermost-chat-ui), enabling both will result in:
-
-![after](screenshots/screenshot3.png)
-
 This repository is based on
 [mattermost-plugin-starter-template](https://github.com/mattermost/mattermost-plugin-starter-template).
 
@@ -24,6 +20,12 @@ Download the plugin file (`ir.quera.mattermost-rtl-*.tar.gz`) from
 [Releases](https://github.com/QueraTeam/mattermost-rtl/releases)
 page and upload to your Mattermost
 server via **System Console**.
+
+## Other Plugins
+
+- [mattermost-vazirmatn](https://github.com/QueraTeam/mattermost-vazirmatn)
+- [mattermost-chat-ui](https://github.com/QueraTeam/mattermost-chat-ui)
+
 
 ## Development, Build
 
