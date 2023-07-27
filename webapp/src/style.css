@@ -1,13 +1,5 @@
-@font-face {
-  font-family: VazirmatnNL;
-  src: url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazirmatn-v33.003/Vazirmatn-NL[wght].woff2") format('woff2 supports variations'),
-       url("/plugins/ir.quera.mattermost-rtl/public/fonts/vazirmatn-v33.003/Vazirmatn-NL[wght].woff2") format('woff2-variations');
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Change font and fix text direction for messages and text inputs */
+/* Fix text direction for messages and text inputs */
+p,
 .post p, .post-message__text,
 .post-message__text h1,
 .post-message__text h2,
@@ -19,8 +11,9 @@
 .channel-header .heading,
 .post .post__header .col__name .user-popover,
 .post .post__link .theme,
-#post_textbox, #edit_textbox, #reply_textbox, #searchBox {
-    font-family: VazirmatnNL, 'Open Sans', sans-serif !important;
+#post_textbox, #edit_textbox, #reply_textbox, #searchBox,
+.SidebarChannelLinkLabel
+{
     unicode-bidi: plaintext;
 }
 
