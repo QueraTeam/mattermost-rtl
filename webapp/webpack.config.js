@@ -1,15 +1,15 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   entry: [
-    './src/index.js'
+    './src/index.js',
   ],
   resolve: {
     modules: [
       'src',
-      'node_modules'
+      'node_modules',
     ],
-    extensions: ['*', '.js', '.jsx', '.ts', '.tsx']
+    extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
   },
   module: {
     rules: [
@@ -19,25 +19,25 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            cacheDirectory: true
+            cacheDirectory: true,
             // Babel configuration is in babel.config.js because jest requires it to be there.
-          }
-        }
+          },
+        },
       },
       {
         test: /\.css$/i,
         use: ['style-loader', {
           loader: 'css-loader',
           options: {
-            url: false
-          }
-        }]
-      }
-    ]
+            url: false,
+          },
+        }],
+      },
+    ],
   },
   output: {
     path: path.join(__dirname, '/dist'),
     publicPath: '/',
-    filename: 'main.js'
-  }
-}
+    filename: 'main.js',
+  },
+};
