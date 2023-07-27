@@ -19,6 +19,13 @@ class MattermostRTLPlugin {
     }
 
     /**
+     * In Mattermost 7.10, textarea#post_textbox has a max-width of 470px,
+     * so its parent needs "dir: auto"
+     */
+    document.querySelector("#post_textbox").parentElement.setAttribute('dir', 'auto');
+
+
+    /**
      *  In Mattermost 5.34, this CSS rule exists:
      *
      *      .post-message__text > ul { direction: ltr }
