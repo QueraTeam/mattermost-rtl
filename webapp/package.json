@@ -1,6 +1,6 @@
 {
   "name": "mattermost-rtl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This plugin adds RTL support to Mattermost.",
   "main": "src/index.js",
   "scripts": {

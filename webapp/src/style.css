@@ -48,3 +48,10 @@ code {
 .channel-header__description .header-description__text p {
     unicode-bidi: plaintext;
 }
+
+/* Fix textbox style for rtl texts that are hidden by send button */
+#post_textbox:not(:empty) {
+  margin-bottom: 3.5rem;
+  max-width: 100%;
+}
+
