@@ -8,14 +8,6 @@ function fixDirections() {
     element.setAttribute('dir', 'auto');
   });
 
-  // In Mattermost 7.10, text boxes have a max-width of 470px, so their parents need "dir: auto".
-  [
-    document.querySelector('#post_textbox'),
-    document.querySelector('#reply_textbox'),
-  ].filter(Boolean).forEach((element) => {
-    element.parentElement.setAttribute('dir', 'auto');
-  });
-
   // In Mattermost 5.34, this CSS rule exists:
   //
   //     .post-message__text > ul { direction: ltr }

@@ -49,9 +49,22 @@ code {
     unicode-bidi: plaintext;
 }
 
-/* Fix textbox style for rtl texts that are hidden by send button */
-#post_textbox:not(:empty) {
-  margin-bottom: 3.5rem;
-  max-width: 100%;
+/**
+ * In Mattermost 7.10+, text boxes have an inline max-width.
+ * This creates some problems for RTL input.
+ */
+#post_textbox, #reply_textbox {
+    max-width: unset!important;
 }
 
+/**
+ * For Mattermost 8+
+ * In "post" and "reply" text boxes, when "Show Formatting" is disabled ("Formatting Bar" is hidden),
+ * RTL text is covered by TexteditorActions toolbox (send, emoji, attachment buttons)
+ * and the first characters from the last line are not visible.
+ * To fix this, we maintains the height of "Formatting Bar" even when it is hidden.
+ * https://github.com/QueraTeam/mattermost-rtl/pull/21
+ */
+.textarea-wrapper ~ .AutoHeight {
+    min-height: 48px;
+}
