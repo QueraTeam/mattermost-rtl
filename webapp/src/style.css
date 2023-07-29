@@ -68,3 +68,13 @@ code {
 .textarea-wrapper ~ .AutoHeight {
     min-height: 48px;
 }
+
+blockquote {
+  padding: 6px 38px 6px 6px;
+}
+blockquote::before {
+  top: 8px;
+  right: 8px;
+  left: auto;
+  content: '\f10e'
+}

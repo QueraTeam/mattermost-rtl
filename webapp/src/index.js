@@ -22,6 +22,7 @@ function fixDirections() {
 
 class MattermostRTLPlugin {
   initialize() {
+    fixDirections();
     this.interval = setInterval(fixDirections, 5000);
   }
 
