@@ -1,9 +1,17 @@
 import manifest from './manifest';
 import './style.scss';
 
-function fixDirections() {
-  const selector = '#post_textbox, #edit_textbox, #reply_textbox, #searchBox, '
-    + '.post-message__text > p, .post-message__text > ul, .post-message__text > ol';
+function fixMattermostDirections() {
+  const selector = [
+    '#post_textbox',
+    '#edit_textbox',
+    '#reply_textbox',
+    '#searchBox',
+    '.post-message__text > p',
+    '.post-message__text > ul',
+    '.post-message__text > ol',
+    '#quickSwitchInput',
+  ].join(', ');
   document.querySelectorAll(selector).forEach((element) => {
     element.setAttribute('dir', 'auto');
   });
@@ -18,6 +26,29 @@ function fixDirections() {
     // eslint-disable-next-line no-param-reassign
     element.outerHTML = `<div>${element.outerHTML}</div>`;
   });
+}
+
+function fixBoardsDirections() {
+  const selector = [
+    '.focalboard-body .Editable',
+    '.focalboard-body input',
+    '.focalboard-body .MarkdownEditor',
+    '.focalboard-body [data-block="true"][data-editor]',
+    '.focalboard-body .BoardsSwitcher input.searchQuery',
+  ].join(', ');
+  document.querySelectorAll(selector).forEach((element) => {
+    element.setAttribute('dir', 'auto');
+  });
+
+  // Fix checkbox element directions
+  document.querySelectorAll('.CheckboxElement input.Editable').forEach((element) => {
+    element.parentElement.setAttribute('dir', getComputedStyle(element).direction);
+  });
+}
+
+function fixDirections() {
+  fixMattermostDirections();
+  fixBoardsDirections();
 }
 
 class MattermostRTLPlugin {

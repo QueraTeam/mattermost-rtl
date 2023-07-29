@@ -82,9 +82,14 @@ blockquote {
     content: '\f10e'
   }
 }
-blockquote::before {
-  top: 8px;
-  right: 8px;
-  left: auto;
-  content: '\f10e'
+
+
+// Mattermost Boards
+.focalboard-body {
+  p, textarea, .KanbanCard .octo-titletext, .octo-propertyname span {
+    unicode-bidi: plaintext;
+  }
+  .CardDetail .Editable.title {
+    text-align: left;
+  }
 }
