@@ -25,6 +25,15 @@ module.exports = {
         },
       },
       {
+        test: /\.s[ac]ss$/i,
+        use: ['style-loader', {
+          loader: 'css-loader',
+          options: {
+            url: false,
+          },
+        }, 'sass-loader'],
+      },
+      {
         test: /\.css$/i,
         use: ['style-loader', {
           loader: 'css-loader',

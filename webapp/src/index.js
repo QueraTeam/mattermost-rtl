@@ -1,5 +1,5 @@
 import manifest from './manifest';
-import './style.css';
+import './style.scss';
 
 function fixDirections() {
   const selector = '#post_textbox, #edit_textbox, #reply_textbox, #searchBox, '

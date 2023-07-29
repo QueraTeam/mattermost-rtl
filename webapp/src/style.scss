@@ -1,0 +1,90 @@
+// Fix text direction for messages and text inputs
+p,
+.post p, .post-message__text,
+.post-message__text h1,
+.post-message__text h2,
+.post-message__text h3,
+.post-message__text h4,
+.post-message__text h5,
+.post-message__text h6,
+.channel-header__info .channel-header__description,
+.channel-header .heading,
+.post .post__header .col__name .user-popover,
+.post .post__link .theme,
+#post_textbox, #edit_textbox, #reply_textbox, #searchBox,
+.SidebarChannelLinkLabel {
+  unicode-bidi: plaintext;
+}
+
+ul.markdown__list {
+  padding-inline-start: 22px !important;
+  padding-inline-end: 0 !important;
+}
+
+ol.markdown__list {
+  display: block !important;
+
+  > li {
+    display: block !important;
+  }
+
+  > li::before {
+    display: inline !important;
+    padding: 0 5px !important;
+  }
+}
+
+// Fix text direction for inline codes
+code {
+  unicode-bidi: plaintext;
+}
+
+
+// For Mattermost >= 5.34
+.post-message__text, .form-control {
+  text-align: initial;
+}
+
+.channel-header__description {
+  direction: ltr;
+
+  .header-description__text p {
+    unicode-bidi: plaintext;
+  }
+}
+
+
+// In Mattermost 7.10+, text boxes have an inline max-width.
+// This creates some problems for RTL input.
+#post_textbox, #reply_textbox {
+  max-width: unset !important;
+}
+
+
+// For Mattermost 8+
+// In "post" and "reply" text boxes, when "Show Formatting" is disabled ("Formatting Bar" is hidden),
+// RTL text is covered by TexteditorActions toolbox (send, emoji, attachment buttons)
+// and the first characters from the last line are not visible.
+// To fix this, we maintains the height of "Formatting Bar" even when it is hidden.
+// https://github.com/QueraTeam/mattermost-rtl/pull/21
+.textarea-wrapper ~ .AutoHeight {
+  min-height: 48px;
+}
+
+// Block Quotes
+blockquote {
+  padding: 6px 38px 6px 6px;
+
+  &::before {
+    top: 8px;
+    right: 8px;
+    left: auto;
+    content: '\f10e'
+  }
+}
+blockquote::before {
+  top: 8px;
+  right: 8px;
+  left: auto;
+  content: '\f10e'
+}
