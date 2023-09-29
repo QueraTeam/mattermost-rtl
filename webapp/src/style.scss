@@ -54,8 +54,13 @@ code {
 }
 
 
-// In Mattermost 7.10+, text boxes have an inline max-width.
-// This creates some problems for RTL input.
+// In Mattermost 7.8-8.0, text boxes have an inline max-width.
+// This creates some problems for RTL input, so we cancel its effect.
+// This behavior is added in this commit:
+// https://github.com/mattermost/mattermost-webapp/commit/44f190f54186c897d8a92ff086100be6f13fde3f
+// And then removed in this commit:
+// https://github.com/mattermost/mattermost/commit/f10487c5117ccc42062edeadfa317f16838fe66d
+// TODO: Since this is fixed in the Mattermost source, keep this for a while and then remove it.
 #post_textbox, #reply_textbox {
   max-width: unset !important;
 }
