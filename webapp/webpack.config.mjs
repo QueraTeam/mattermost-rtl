@@ -1,6 +1,8 @@
-const path = require('path');
+import path from "path";
 
-module.exports = {
+const __dirname = path.dirname(new URL(import.meta.url).pathname)
+
+export default {
   entry: [
     './src/index.js',
   ],
