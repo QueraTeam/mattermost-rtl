@@ -10,6 +10,7 @@ function fixMattermostDirections() {
     ".post-message__text > p",
     ".post-message__text > ul",
     ".post-message__text > ol",
+    ".post-message__text > div.tex", // https://github.com/QueraTeam/mattermost-rtl/issues/22
     "#quickSwitchInput",
   ].join(", ");
   document.querySelectorAll(selector).forEach((element) => {
