@@ -21,17 +21,12 @@ ul.markdown__list {
   padding-inline-end: 0 !important;
 }
 
-ol.markdown__list {
-  display: block !important;
-
-  > li {
-    display: block !important;
-  }
-
-  > li::before {
-    display: inline !important;
-    padding: 0 5px !important;
-  }
+// Number RTL ordered lists in Persian digits. Mattermost draws the numbers as
+// `li::marker { content: counter(list) ".  " }`; `:dir(rtl)` follows the direction
+// each list resolves to (index.js gives them `dir="auto"`), so LTR lists keep theirs.
+// Task-list items have no number.
+ol.markdown__list:dir(rtl) > li:not(.list-item--task-list)::marker {
+  content: counter(list, persian) ".  ";
 }
 
 // Fix text direction for inline codes
@@ -77,15 +72,18 @@ code {
 }
 
 // Block Quotes
+// Mattermost (12) draws a quote as a bar on its left, with no icon.
+// index.js gives every quote `dir="auto"`; put the bar on the start side, so an
+// RTL quote has it on the right.
 blockquote {
-  padding: 6px 38px 6px 6px;
+  border-left: 0;
+  border-inline-start: 2px solid rgba(var(--center-channel-color-rgb), 0.2);
+}
 
-  &::before {
-    top: 8px;
-    right: 8px;
-    left: auto;
-    content: '\f10e'
-  }
+// Compact message display pads the quote on the left only.
+.post.post--compact blockquote {
+  padding: 0;
+  padding-inline-start: 8px;
 }
 
 

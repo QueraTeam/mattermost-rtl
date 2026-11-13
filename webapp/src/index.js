@@ -11,11 +11,24 @@ function fixMattermostDirections() {
     ".post-message__text > ul",
     ".post-message__text > ol",
     ".post-message__text > div.tex", // https://github.com/QueraTeam/mattermost-rtl/issues/22
+    ".post-message__text blockquote",
     "#quickSwitchInput",
   ].join(", ");
   document.querySelectorAll(selector).forEach((element) => {
     element.setAttribute("dir", "auto");
   });
+
+  // Mattermost indents an ordered list with an inline `padding-left` sized for
+  // its longest number. Move it to the start side so RTL lists keep it too.
+  document
+    .querySelectorAll(".post-message__text ol.markdown__list")
+    .forEach((element) => {
+      const indent = element.style.paddingLeft;
+      if (indent) {
+        element.style.paddingLeft = "";
+        element.style.paddingInlineStart = indent;
+      }
+    });
 
   // In Mattermost 5.34, this CSS rule exists:
   //
